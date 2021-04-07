@@ -1,0 +1,29 @@
+@import '../../mixins.scss';
+
+.Home {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+@media screen and (min-device-width: 960px) {
+    .Home {
+        background-image: url('../../images/Background.jpg');
+        @include height(1080, 1920);
+    }
+}
+
+@media screen and (min-device-width: 720px) and (max-device-width: 959px) {
+    .Home {
+        background-image: url('../../images/Background_tablet.jpg');
+        @include height(911, 764);
+    }
+}
+
+@media screen and (max-device-width: 719px) {
+    .Home {
+        background-image: url('../../images/Background_mobile.jpg');
+        @include height(267, 316);
+    }
+}

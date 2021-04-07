@@ -1,0 +1,79 @@
+@import '../../mixins.scss';
+
+.Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 101px;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        flex-grow: 1;
+        justify-content: space-between;
+        width: 594px;
+    
+        li {
+            font-size: 24px;
+            letter-spacing: 1px;
+            color: #f1f1f1;
+            font-weight: 400;
+            font-family: "PT Sans";
+        }
+    }   
+
+    hr {
+        width: 100%;
+        size: 1px;
+        background-color: #ffffff;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-device-width: 960px) {
+    .Menu {
+        margin-top: 3px;
+        margin-left: 66px;
+        margin-right: 65px;
+    
+        span {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-device-width: 720px) and (max-device-width: 959px) {
+    .Menu {
+        margin-top: 20px;
+        margin-left: 66px;
+        margin-right: 47px;
+    
+        span {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-device-width: 719px) {
+    .Menu hr {
+        display: none;
+    }
+
+    .Menu ul {
+        display: none;
+    }
+
+    .Menu span {
+        @include font-size(24, 320);
+        letter-spacing: 1px;
+        color: #f1f1f1;
+        font-weight: 700;
+        font-family: "PT Sans";
+        position: absolute;
+        @include top(33, 320);
+        @include left(43, 320);
+    }
+}

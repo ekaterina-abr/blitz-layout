@@ -1,0 +1,39 @@
+@import '../../mixins.scss';
+
+.AboutMe {
+    width: 100%;
+    background-color: white;
+    box-sizing: content-box;
+
+    .Menu ul {
+        width: 614px;
+    }
+
+    .Menu ul li {
+        color: #bebebe;
+        font-weight: 300;
+        font-family: "Nexa Light";
+        font-size: 28px;
+    }
+
+    .Menu hr {
+        color: #bebebe;
+    }
+}
+
+@media screen and (min-device-width: 720px) and (max-device-width: 959px) {
+    .AboutMe .Menu {
+        margin-left: 0;
+        margin-right: 0;
+    
+        ul {
+            width: 713px;
+        }
+    }
+}
+
+@media screen and (max-device-width: 719px) {
+    .AboutMe .Menu {
+        display: none;
+    }
+}

@@ -1,0 +1,32 @@
+@media screen and (min-device-width: 960px) {
+    .ScrollDown {
+        position: sticky;
+        top: 814px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 53px;
+    
+        p {
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #f1f1f1;
+            font-weight: 400;
+            font-family: "Open Sans";
+            margin-bottom: 24px;
+            margin-top: 0;
+        }   
+    }
+}
+
+@media screen and (min-device-width: 720px) and (max-device-width: 959px) {
+    .ScrollDown {
+        display: none;
+    }
+}
+
+@media screen and (max-device-width: 719px) {
+    .ScrollDown {
+        display: none;
+    }
+}
